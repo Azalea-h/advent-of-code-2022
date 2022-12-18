@@ -22,7 +22,6 @@ with open("input.txt", "r") as f:
 trees = [list(num) for line in lines for num in line.split()]
 
 highest_score = 0
-scores = []
 
 for row_idx in range(1, len(trees)-1): 
 
