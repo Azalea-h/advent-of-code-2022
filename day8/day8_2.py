@@ -6,11 +6,10 @@ def count_trees_in_view(trees, current_tree):
 
     while not blocked and i < len(trees):
 
-        if trees[i] < current_tree:
-            tree_count += 1
-        else:
-            tree_count += 1
+        if trees[i] >= current_tree:
             blocked = True
+        
+        tree_count += 1
         i += 1    
 
     return tree_count
