@@ -61,9 +61,9 @@ instructions = lines[idx+2:]
 for instruction in instructions:
 
     num_crate_to_move, from_stack, to_stack = int(instruction[1]), int(instruction[3])-1, int(instruction[5])-1
-    stuff_to_move = horizontal[from_stack][-num_crate_to_move:]
+    crates_to_move = horizontal[from_stack][-num_crate_to_move:]
     horizontal[from_stack] = horizontal[from_stack][:-num_crate_to_move]
-    horizontal[to_stack] += stuff_to_move
+    horizontal[to_stack] += crates_to_move
 
 for stack in horizontal:
 
