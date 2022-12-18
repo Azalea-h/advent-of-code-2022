@@ -1,4 +1,3 @@
-
 def count_trees_in_view(trees, current_tree):
 
     tree_count = 0
