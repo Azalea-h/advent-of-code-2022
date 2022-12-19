@@ -1,5 +1,3 @@
-# WRONG BFZEKBFR
-
 def draw(cycle): # return a symbol to add to crt
 
     global sprite_start
