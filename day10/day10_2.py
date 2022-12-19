@@ -6,10 +6,8 @@ def draw(cycle): # return a symbol to add to crt
     position = cycle % 40
 
     if position >= sprite_start and position <= sprite_end:
-        print("#")
         return "#"
     else:
-        print(".")
         return "."
 
 with open("input.txt", "r") as f:
